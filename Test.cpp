@@ -42,7 +42,7 @@ TEST_SUITE("Iterators Methods:"){
         CHECK(it1>it);      // 5>2
         CHECK_NE(it,asIt.end());
         string ans;
-        for(it = asIt.begin();it != asIt.end();++it){
+        for(;it != asIt.end();++it){
             ans += *it + ' ';
         }
         CHECK_EQ(ans,"1 2 4 5 14 ");
@@ -70,7 +70,7 @@ TEST_SUITE("Iterators Methods:"){
         CHECK_EQ(*it,1);
         CHECK_NOTHROW(++it);
         string ans;
-        for(it = scIt.begin();it != scIt.end();++it){
+        for(;it != scIt.end();++it){
             ans += *it + ' ';
         }
         CHECK_EQ(ans,"1 14 2 5 4 ");
@@ -100,7 +100,7 @@ TEST_SUITE("Iterators Methods:"){
         CHECK_NE(it,prIt.end());
 
         string ans;
-        for(it = prIt.begin() ;it != prIt.end();++it){
+        for(;it != prIt.end();++it){
             ans += *it + ' ';
         }
         CHECK_EQ(ans,"2 5 ");

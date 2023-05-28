@@ -31,6 +31,8 @@ namespace ariel {
         AscendingIterator(const AscendingIterator& other);
         AscendingIterator(MagicalContainer& container);
         ~AscendingIterator();
+
+        void setIndex(int idx){_current_index = idx;}
         AscendingIterator& operator=(const AscendingIterator& other) {
             _container = other._container;
             _current_index = other._current_index;
@@ -83,6 +85,7 @@ class SideCrossIterator {
         SideCrossIterator(const SideCrossIterator& other);
         SideCrossIterator(MagicalContainer& container);
         ~SideCrossIterator();
+        void setIndex(int idx){_current_index = idx;}
         SideCrossIterator& operator=(const SideCrossIterator& other) {
             _container = other._container;
             _current_index = other._current_index;
@@ -136,6 +139,7 @@ class PrimeIterator {
         PrimeIterator(const PrimeIterator& other);
         PrimeIterator(MagicalContainer& container);
         ~PrimeIterator();
+        void setIndex(int idx){_current_index = idx;}
         PrimeIterator& operator=(const PrimeIterator& other) {
             _container = other._container;
             _current_index = other._current_index;

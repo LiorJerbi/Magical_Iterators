@@ -6,12 +6,10 @@ using namespace std;
 
 MagicalContainer::MagicalContainer():_container(),_size(0){}
 void MagicalContainer::addElement(int num){
-    _container.push_back(num);
-    _size++;
+
 }
 void MagicalContainer::removeElement(int num){      //need to change imple for add and remove
-    _container.pop_back();
-    _size--;
+
 }
 int MagicalContainer::size() const{
     return _size;

@@ -33,7 +33,7 @@ TEST_SUITE("Iterators Methods:"){
         container.addElement(4);
         container.addElement(1);
         container.addElement(14);
-        AscendingIterator asIt(container);
+        MagicalContainer::AscendingIterator asIt(container);
         auto it = asIt.begin();
         CHECK_EQ(*it,1);
         auto it1 = ++it;        //should be 2
@@ -65,7 +65,7 @@ TEST_SUITE("Iterators Methods:"){
         container.addElement(4);
         container.addElement(1);
         container.addElement(14);
-        SideCrossIterator scIt(container);
+        MagicalContainer::SideCrossIterator scIt(container);
         auto it = scIt.begin();
         CHECK_EQ(*it,1);
         CHECK_NOTHROW(++it);
@@ -91,7 +91,7 @@ TEST_SUITE("Iterators Methods:"){
         container.addElement(4);
         container.addElement(1);
         container.addElement(14);
-        PrimeIterator prIt(container);
+        MagicalContainer::PrimeIterator prIt(container);
         auto it = prIt.begin();
         CHECK_EQ(*it,2);
         auto it1 = ++it;        //should be 5

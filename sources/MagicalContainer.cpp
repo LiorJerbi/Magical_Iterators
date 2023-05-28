@@ -18,12 +18,12 @@ std::vector<int>& MagicalContainer::getContainer(){
     return _container;
 }
 
-AscendingIterator::AscendingIterator(const AscendingIterator& other) : _container(other._container), _current_index(other._current_index) {}
-AscendingIterator::AscendingIterator(MagicalContainer& container) : _container(container), _current_index(0) {}
-AscendingIterator::~AscendingIterator(){}
-SideCrossIterator::SideCrossIterator(const SideCrossIterator& other) : _container(other._container), _current_index(other._current_index) {}
-SideCrossIterator::SideCrossIterator(MagicalContainer& container) : _container(container), _current_index(0) {}
-SideCrossIterator::~SideCrossIterator(){}
-PrimeIterator::PrimeIterator(const PrimeIterator& other) : _container(other._container), _current_index(other._current_index) {}
-PrimeIterator::PrimeIterator(MagicalContainer& container) : _container(container), _current_index(0) {}
-PrimeIterator::~PrimeIterator(){}
+MagicalContainer::AscendingIterator::AscendingIterator(const AscendingIterator& other) : _container(other._container), _current_index(other._current_index) {}
+MagicalContainer::AscendingIterator::AscendingIterator(MagicalContainer& container) : _container(container), _current_index(0) {}
+MagicalContainer::AscendingIterator::~AscendingIterator(){}
+MagicalContainer::SideCrossIterator::SideCrossIterator(const SideCrossIterator& other) : _container(other._container), _current_index(other._current_index) {}
+MagicalContainer::SideCrossIterator::SideCrossIterator(MagicalContainer& container) : _container(container), _current_index(0) {}
+MagicalContainer::SideCrossIterator::~SideCrossIterator(){}
+MagicalContainer::PrimeIterator::PrimeIterator(const PrimeIterator& other) : _container(other._container), _current_index(other._current_index) {}
+MagicalContainer::PrimeIterator::PrimeIterator(MagicalContainer& container) : _container(container), _current_index(0) {}
+MagicalContainer::PrimeIterator::~PrimeIterator(){}
